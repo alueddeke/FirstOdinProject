@@ -1,0 +1,241 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  /*percentages are of body block */
+  width: 100%;
+  height: 7%;
+  background-color: rgb(2, 95, 177);
+}
+
+.section1,
+.section2,
+.section3,
+.section4 {
+  width: 100%;
+  min-height: 22.5%;
+}
+
+.section1 {
+  padding-top: 3%;
+  width: 80%;
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-bottom: 3%;
+}
+
+.headerlogo {
+  /*font-weight is how bold it looks */
+  font-weight: 700;
+  /*text will pop out 50px*/
+  padding-left: 50px;
+  font-size: x-large;
+}
+
+.links {
+  font-size: small;
+  /*since this is flex display, this should push all links to the right*/
+  margin-left: auto;
+  /*after pushed all the way to the right, it will pop out 50 px*/
+  padding-right: 50px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.h1 {
+  margin-right: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.section1 {
+  display: flex;
+  /* makes things on one row*/
+  flex-direction: row;
+  /*establish space between the two divs */
+  justify-content: space-between;
+  background-color: #1f2937;
+  color: #f9faf8;
+  /*adds a depth to the section, looks like a gradient*/
+  box-shadow: 0px 3px 25px 0 #1f2937, 0 4px 15px 0px #ccc;
+}
+/*now that divs are placed correctly, we need to size them*/
+
+.s1Text {
+  width: 300px;
+  height: 255px;
+}
+
+.s1ImgDiv {
+  /*create a container for the image to sit in, establish a border*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 255px;
+  height: 255px;
+  /*space out from right wall*/
+  margin-right: 35%;
+}
+/*make image smaller than container to show border*/
+.s1img {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+}
+
+.s1h1 {
+  font-weight: 700;
+  font-size: 40px;
+  /*add space from text below it*/
+  padding-bottom: 20px;
+}
+
+.s1h4 {
+  padding-bottom: 10px;
+}
+
+.s1btn {
+  width: 100px;
+  height: 30px;
+  background-color: #3882f6;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+.s2h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600px;
+}
+
+/*going box by box now*/
+
+.b1container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  border-radius: 10px;
+  /*creates responsive box, how long it takes to reach hover dimensions*/
+  transition: 0.5s;
+  /*changes mouse icon to a pointer*/
+  cursor: pointer;
+}
+
+/*expands the box to a new dimension when you hover on it*/
+.b1container:hover {
+  width: 250px;
+  height: 250px;
+}
+
+.s2boximg {
+  width: 100px;
+  height: 100px;
+  /*creating a border for the img itself, it will be black*/
+  border-radius: 5px;
+  border: 1.5px solid rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.s2boximg:hover {
+  width: 250px;
+  height: 250px;
+  border: 1.5px solid rgb(0, 0, 0);
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.b1info {
+  padding-top: 20px;
+}
+
+.section3 {
+  margin-top: 70px;
+  background-color: #e5e7eb;
+  /*box shadow makes things pop outwards, giving other sections depth*/
+  box-shadow: 0px 3px 25px 0 #8d8d8d, 0 4px 15px 0px #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.s3h3 {
+  max-width: 70%;
+  font-size: 20px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #1f2937;
+}
+.s3h4 {
+  padding-top: 15px;
+  max-width: 70%;
+  /*shoves container all the way to the right*/
+  margin-left: auto;
+  /*pops out 20%*/
+  margin-right: 20%;
+  font-weight: bold;
+}
+
+.s4box {
+  width: 75%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  min-height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #3881f6;
+  border-radius: 20px;
+  display: flex;
+  /*flex-direction: row;*/
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section4 {
+  padding-top: 70px;
+}
+
+.s4hs {
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.s4btn {
+  width: 200px;
+  height: 35px;
+  background-color: #3881f6;
+  border: 1.5px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  margin-right: 15px;
+}
+
+.s4btn:hover {
+  cursor: pointer;
+  background-color: #4884e4;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: large;
+}
